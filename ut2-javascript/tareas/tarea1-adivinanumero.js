@@ -3,7 +3,7 @@ const prompt = require('prompt-sync')();
 
 const numeroAdivinar = Math.floor(Math.random() * 11);
 let adivinado = false;
-let intentos = 0; // Usamos esta variable global para el bucle
+let intentos = 0;
 
 do {
     let entrada = prompt("Adivina un número aleatorio del 0 al 10");
@@ -11,7 +11,7 @@ do {
     
     if (entrada === null || entrada.trim() === "") {
         console.log('No se ha proporcionado ningún número');
-        continue; // Salta al final del bucle para pedir el número otra vez
+        continue;
     }
     
     let intento = Number(entrada);
