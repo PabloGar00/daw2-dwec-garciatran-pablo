@@ -20,8 +20,10 @@ do {
     if (intento === numeroAdivinar) {
         console.log('¡Has adivinado el número!');
         adivinado = true;
+    } else if (intento < numeroAdivinar) {
+        console.log('El número secreto es MAYOR');
     } else {
-        console.log('No has adivinado el número');
+        console.log('El número secreto es MENOR');
     }
 
 } while (!adivinado && intentos < 5); 
