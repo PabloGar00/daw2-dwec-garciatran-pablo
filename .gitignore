@@ -143,4 +143,4 @@ vite.config.ts.timestamp-*
 .vite/
 package.json
 package-lock.json
-.zip
+*.zip
