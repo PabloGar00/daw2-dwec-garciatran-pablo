@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      document.getElementById("enviar").addEventListener("click", function (e) {
+        e.preventDefault();
+        const numero1 = parseFloat(
+          document.querySelector('input[name="numero"]').value,
+        );
+        const numero2 = parseFloat(
+          document.querySelector('input[name="numero2"]').value,
+        );
+        const resultado = numero1 + numero2;
+        document.getElementById("resultado").textContent =
+          "Resultado: " + resultado;
+      });
+    </script>
+  </head>
+  <body>
+    <form>
+      <input type="number" name="numero" placeholder="Número" />
+      <input type="number" name="numero2" placeholder="Número2" />
+      <button id="enviar" type="submit">Enviar</button>
+    </form>
+    <p id="resultado"></p>
+  </body>
+</html>
